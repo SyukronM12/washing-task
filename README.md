@@ -75,7 +75,9 @@ http://your-domain.test/admin
 ---
 
 ## 🧪 Testing
+```bash
 php artisan test
+```
 
 ---
 
