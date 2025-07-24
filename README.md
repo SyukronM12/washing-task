@@ -33,30 +33,38 @@ cd your-repo
 
 
 ### 2. Install Dependencies
+```bash
 composer install
 npm install && npm run build
+```
 
 
 ### 3. Set Up Environment
+```bash
 cp .env.example .env
 php artisan key:generate
+```
 
 
 ### 4. Run Migrations
+```bash
 php artisan migrate
+```
 
 
 ### 5. Seed Admin User (Optional)
+```bash
 php artisan db:seed
+```
 
 ---
 
-🔐 Accessing Admin Panel
+## 🔐 Accessing Admin Panel
 http://your-domain.test/admin
 
 ---
 
-📁 Project Structure Highlights
+## 📁 Project Structure Highlights
 | Folder / File                     | Description                     |
 | --------------------------------- | ------------------------------- |
 | `app/Models/Asset/Fleet.php`      | Fleet model with features/UUID  |
@@ -66,22 +74,22 @@ http://your-domain.test/admin
 
 ---
 
-🧪 Testing
+## 🧪 Testing
 php artisan test
 
 ---
 
-📦 Deployment
+## 📦 Deployment
 - Set APP_ENV=production
 - Run php artisan config:cache, route:cache, etc.
 - Ensure file permissions for storage/ and bootstrap/cache/
 
 ---
 
-📄 License
+## 📄 License
 This project is open-sourced under the MIT license.
 
 ---
 
-🙏 Credits
+## 🙏 Credits
 Built with ❤️ using Laravel & FilamentPHP
